@@ -1,0 +1,21 @@
+version: v1
+persistDir: /var/lib/quota-agent
+logLevel: info
+
+manager:
+  runtime: containerd
+  socket: /run/containerd/containerd.sock
+  mountPoint: /var/lib/containerd
+  size: "100G"
+  projidMin: 1000
+  projidMax: 65534
+  autoQuota: true
+  namespaces:
+    - k8s.io
+
+  matchRules: []
+
+web:
+  enabled: true
+  host: 0.0.0.0
+  port: 8080
