@@ -1,5 +1,7 @@
 # Containerd Snapshot Quota
 
+[English](README.md) | [中文](README_zh.md)
+
 [![Go Version](https://img.shields.io/github/go-mod/go-version/0x0034/containerd-snapshot-quota)](go.mod)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
 
